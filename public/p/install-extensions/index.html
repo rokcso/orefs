@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="以 Google Chrome 浏览器为例。">
+<meta name="keywords" content="扩展程序, 浏览器"><title>如何在浏览器中安装扩展程序</title>
+
+<link rel='canonical' href='http://localhost:1313/p/install-extensions/'>
+
+<link rel="stylesheet" href="/scss/style.min.c1b2e41d029a86adb583a2509ead47985dc52e0d36177284a149600eb4ae3717.css"><meta property='og:title' content="如何在浏览器中安装扩展程序">
+<meta property='og:description' content="以 Google Chrome 浏览器为例。">
+<meta property='og:url' content='http://localhost:1313/p/install-extensions/'>
+<meta property='og:site_name' content='O Refs'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='扩展程序' /><meta property='article:tag' content='技巧' /><meta property='article:published_time' content='2024-07-29T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-07-29T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="如何在浏览器中安装扩展程序">
+<meta name="twitter:description" content="以 Google Chrome 浏览器为例。">
+    <link rel="shortcut icon" href="/favicon.png" />
+
+  
+
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column compact"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu84286a371e7d93bf601fbb608632eeec_37152_300x0_resize_box_3.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">O Refs</a></h1>
+            <h2 class="site-description">分享一切好东西 🎁</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%A7%91%E5%AD%A6/" >
+                浏览器科学
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/install-extensions/">如何在浏览器中安装扩展程序</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            以 Google Chrome 浏览器为例。
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">2024-07-29 00:00</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 1 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h2 id="从应用市场安装">从应用市场安装
+</h2><p>浏览器扩展程序就同正常的手机 App 一样有自己的应用市场，例如：</p>
+<ul>
+<li><a class="link" href="https://chrome.google.com/webstore/category/extensions"  target="_blank" rel="noopener"
+    >Chrome 网上应用商店</a>（需要科学上网）</li>
+<li><a class="link" href="https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home"  target="_blank" rel="noopener"
+    >Edge 外接程序应用市场</a></li>
+</ul>
+<p><img src="/p/install-extensions/image-1.png"
+	width="1080"
+	height="650"
+	srcset="/p/install-extensions/image-1_hudba48030b6df1fdd31090984349eaeb7_179715_480x0_resize_box_3.png 480w, /p/install-extensions/image-1_hudba48030b6df1fdd31090984349eaeb7_179715_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="Chrome 网上应用商店"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="166"
+		data-flex-basis="398px"
+	
+></p>
+<p>进入扩展应用市场找到自己想要安装使用的扩展程序之后，点击进入详情页面，然后点击「添加至 Chrome」即可。</p>
+<p><img src="/p/install-extensions/image-2.png"
+	width="1080"
+	height="648"
+	srcset="/p/install-extensions/image-2_huc5d2ac33c1c69122257f94afc8199ba5_152738_480x0_resize_box_3.png 480w, /p/install-extensions/image-2_huc5d2ac33c1c69122257f94afc8199ba5_152738_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="添加至 Chrome"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="166"
+		data-flex-basis="400px"
+	
+></p>
+<h2 id="从本地文件安装">从本地文件安装
+</h2><p>为了解决有些用户无法访问 Chrome 网上应用商店的问题，网上有些人可能会直接提供 <code>.crx</code> 文件。</p>
+<p>获取到 <code>.crx</code> 文件之后，我们在 Chrome 内点击最右上角的三个点「┇」，然后选择「更多工具」，点击「扩展程序」。</p>
+<p><img src="/p/install-extensions/image-3.png"
+	width="1080"
+	height="638"
+	srcset="/p/install-extensions/image-3_hu02cdddb2389672c9a3b354fb71ea13c5_221466_480x0_resize_box_3.png 480w, /p/install-extensions/image-3_hu02cdddb2389672c9a3b354fb71ea13c5_221466_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="扩展程序"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="169"
+		data-flex-basis="406px"
+	
+></p>
+<p>或者 Chrome 地址栏输入 <code>chrome://extensions/</code> 后点击回车即可进入扩展程序管理页面。</p>
+<p>进入扩展程序管理页面之后，点击右上角开启「开发者模式」，然后将获取到的 <code>.crx</code> 文件直接拖入该页面即可完成安装。</p>
+<p><img src="/p/install-extensions/image-4.png"
+	width="1080"
+	height="644"
+	srcset="/p/install-extensions/image-4_hu162478293cfcfe444ef0a8e4b1aef209_157821_480x0_resize_box_3.png 480w, /p/install-extensions/image-4_hu162478293cfcfe444ef0a8e4b1aef209_157821_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="开发者模式"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="167"
+		data-flex-basis="402px"
+	
+></p>
+<h2 id="显示隐藏扩展程序图标">显示/隐藏扩展程序图标
+</h2><p>当我们安装好扩展程序之后，可能会发现刚刚安装的扩展程序图标并没有出现在 Chrome 右上角。</p>
+<p>这时候只需要点击如图所示这个「扩展程序」图标，弹出的列表里面就是你已经安装好的扩展程序。</p>
+<p><img src="/p/install-extensions/image-5.png"
+	width="1080"
+	height="649"
+	srcset="/p/install-extensions/image-5_hu49b9bbeafc011730045afca2032f8909_232264_480x0_resize_box_3.png 480w, /p/install-extensions/image-5_hu49b9bbeafc011730045afca2032f8909_232264_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="显示扩展程序图标"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="166"
+		data-flex-basis="399px"
+	
+></p>
+<p>点击扩展程序后边的图钉符号即可选择是显示还是隐藏该扩展程序图标。</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/%E6%89%A9%E5%B1%95%E7%A8%8B%E5%BA%8F/">扩展程序</a>
+        
+            <a href="/tags/%E6%8A%80%E5%B7%A7/">技巧</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>根据 CC BY-NC-SA 4.0 许可协议授权</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/p/windows-feature-tips/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">分享几个实用的 Windows 自带功能</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/query-sim-card/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">如何查询个人名下所有电话卡信息</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/macos-remove-abc/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Mac 删除系统自带的 ABC 输入法</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2024 - 
+        
+        2025 O Refs
+    </section>
+    
+    <section class="powerby">
+        
+            用 ❤️ 分享，保持热爱 <br/>
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.7e2613cf955853caa8fc0a42b25b0a61363234c79309c5d2729f0ecf2f89b078.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

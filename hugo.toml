@@ -1,0 +1,45 @@
+baseURL = "https://orefs.com/"
+# 网站 meta 数据中声明的语言
+languageCode = "zh-CN"
+# 网站预设文字实际使用的语言
+DefaultContentLanguage = "zh-cn"
+title = "O Refs"
+theme = "hugo-theme-stack"
+
+[permalinks]
+post = "/p/:slug/"
+page = "/:slug/"
+
+[Params]
+description = '分享一切好东西。'
+rssFullContent = true
+# 在站点 /static 下
+favicon = '/favicon.png'
+
+[Params.DateFormat]
+published = "2006-01-02 15:04"
+lastUpdated = "2006-01-02 15:04"
+
+[Params.Sidebar]
+# 紧凑的侧边栏
+compact = false
+# 头像右下角显示的 emoji
+emoji = ""
+# 网站标题下的副标题
+subtitle = "分享一切好东西 🎁"
+
+# 是否显示头像
+avatar.enabled = true
+# 头像文件路径，在站点 /assets 下
+avatar.src = "/img/avatar.png"
+
+[Params.Footer]
+since = 2024
+customText = "用 ❤️ 分享，保持热爱"
+
+[Params.Article]
+license.enabled = true
+license.default = "根据 CC BY-NC-SA 4.0 许可协议授权"
+
+[params.imageProcessing]
+cover.enabled = true

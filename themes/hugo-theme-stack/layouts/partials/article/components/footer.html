@@ -1,0 +1,25 @@
+<footer class="article-footer">
+    {{ partial "article/components/tags" . }}
+
+    {{ if and (.Site.Params.article.license.enabled) (not (eq .Params.license false)) }}
+    <section class="article-copyright">
+        {{ partial "helper/icon" "copyright" }}
+        <span>{{ default .Site.Params.article.license.default .Params.license | markdownify }}</span>
+    </section>
+    {{ end }}
+
+    {{- if ne .Lastmod .Date -}}
+    <section class="article-lastmod">
+        {{ partial "helper/icon" "clock" }}
+        <span>
+            {{ T "article.lastUpdatedOn" }} {{ .Lastmod | time.Format ( or .Site.Params.dateFormat.lastUpdated "Jan 02, 2006 15:04 MST" ) }}
+        </span>
+    </section>
+    {{- end -}}
+
+    <!-- rokcso: 在文章页最底部增加注脚 -->
+    <section>
+        <span>以上网站、软件均收集于网络，其内容数据与本站点无关，其正确性、合法性、合规性本站不能保证，请读者自行甄别，如有侵权请
+      <a href="/about">联系</a> 删除。</span>
+    </section>
+</footer>

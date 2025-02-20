@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="部分小众。">
+<meta name="keywords" content="Windows, 原生功能"><title>分享几个实用的 Windows 自带功能</title>
+
+<link rel='canonical' href='http://localhost:1313/p/windows-feature-tips/'>
+
+<link rel="stylesheet" href="/scss/style.min.c1b2e41d029a86adb583a2509ead47985dc52e0d36177284a149600eb4ae3717.css"><meta property='og:title' content="分享几个实用的 Windows 自带功能">
+<meta property='og:description' content="部分小众。">
+<meta property='og:url' content='http://localhost:1313/p/windows-feature-tips/'>
+<meta property='og:site_name' content='O Refs'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='技巧' /><meta property='article:published_time' content='2024-07-29T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-07-29T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="分享几个实用的 Windows 自带功能">
+<meta name="twitter:description" content="部分小众。">
+    <link rel="shortcut icon" href="/favicon.png" />
+
+  
+
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column compact"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu84286a371e7d93bf601fbb608632eeec_37152_300x0_resize_box_3.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">O Refs</a></h1>
+            <h2 class="site-description">分享一切好东西 🎁</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/windows-feature-tips/">分享几个实用的 Windows 自带功能</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            部分小众。
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">2024-07-29 00:00</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 1 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h2 id="剪贴板">剪贴板
+</h2><p>在 Windows 10 中，我们可以打开「剪贴板历史记录」，可以将多次复制的内容保留到剪贴板。</p>
+<p><img src="/p/windows-feature-tips/image.png"
+	width="1080"
+	height="830"
+	srcset="/p/windows-feature-tips/image_hu76ca1274f64c44420c1ac86eb4825d59_371324_480x0_resize_box_3.png 480w, /p/windows-feature-tips/image_hu76ca1274f64c44420c1ac86eb4825d59_371324_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="剪贴板历史记录 - On"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="130"
+		data-flex-basis="312px"
+	
+></p>
+<p>粘贴的时候，按下 Win + V，就可以选择要粘贴的内容了。</p>
+<p><img src="/p/windows-feature-tips/image-1.png"
+	width="437"
+	height="540"
+	srcset="/p/windows-feature-tips/image-1_hu35850680664329644a091637779252b1_180235_480x0_resize_box_3.png 480w, /p/windows-feature-tips/image-1_hu35850680664329644a091637779252b1_180235_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="剪贴板"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="80"
+		data-flex-basis="194px"
+	
+></p>
+<p>然后我们的操作路径就发生了如下的变化：</p>
+<p>复制 切换 粘贴 复制 切换 粘贴 复制 切换 粘贴 👉 复制 复制 复制 切换 粘贴 粘贴 粘贴</p>
+<p>与此同时，Windows 10 还提供了「云剪贴板」选项，开启同步之后就可以在多台设备上同步剪贴板了。</p>
+<h2 id="沙盒">沙盒
+</h2><p>沙盒其实就可以理解为一个虚拟机，使用沙盒就是在电脑里使用电脑。</p>
+<p>所以即使你在沙盒里安装一些不太正经的软件然后导致死机了，你自己的电脑也不会受影响。</p>
+<p>很多时候我们需要单独安装虚拟机，而 Windows 10 就自带了一个。</p>
+<p>并且这个沙盒拥有桌面系统、文件系统，可以和真实电脑共享剪贴板数据，这表示你可以通过复制粘贴在真实电脑与沙盒之前传输数据。</p>
+<p>温馨提示：沙盒只在 Windows 10 专业版中有。</p>
+<h2 id="虚拟桌面">虚拟桌面
+</h2><p>虚拟桌面就是你可以同时创建多个桌面，方便多任务平行处理。</p>
+<p>在 Windows 10 中，按下 Win + Tab 后，屏幕上方就会出现「新建桌面」的提示，点击即可创建新的桌面。</p>
+<p><img src="/p/windows-feature-tips/image-2.png"
+	width="1080"
+	height="608"
+	srcset="/p/windows-feature-tips/image-2_hu95d31f36f474a5e803b707185442e941_128372_480x0_resize_box_3.png 480w, /p/windows-feature-tips/image-2_hu95d31f36f474a5e803b707185442e941_128372_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="虚拟桌面"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="177"
+		data-flex-basis="426px"
+	
+></p>
+<h2 id="移动热点">移动热点
+</h2><p>这个功能应该还不太为人所知，或者很少有人使用。</p>
+<p>其实就像手机热点一样，Windows 10 也可以开热点，将宽带网络通过热点供其他 WiFi 设备使用。</p>
+<p>你只需要在「通知中心」中打开「移动热点」开关即可。</p>
+<p><img src="/p/windows-feature-tips/image-3.png"
+	width="1000"
+	height="1000"
+	srcset="/p/windows-feature-tips/image-3_hub3b0dcc78d80f2d33983d366aa0c6bdd_136502_480x0_resize_box_3.png 480w, /p/windows-feature-tips/image-3_hub3b0dcc78d80f2d33983d366aa0c6bdd_136502_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="通知中心"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="100"
+		data-flex-basis="240px"
+	
+></p>
+<p><img src="/p/windows-feature-tips/image-4.png"
+	width="1000"
+	height="1000"
+	srcset="/p/windows-feature-tips/image-4_hu4969f3620c68a66c8a51455dd124792c_480060_480x0_resize_box_3.png 480w, /p/windows-feature-tips/image-4_hu4969f3620c68a66c8a51455dd124792c_480060_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="移动热点"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="100"
+		data-flex-basis="240px"
+	
+></p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/%E6%8A%80%E5%B7%A7/">技巧</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>根据 CC BY-NC-SA 4.0 许可协议授权</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/p/install-extensions/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">如何在浏览器中安装扩展程序</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/query-sim-card/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">如何查询个人名下所有电话卡信息</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/macos-remove-abc/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Mac 删除系统自带的 ABC 输入法</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2024 - 
+        
+        2025 O Refs
+    </section>
+    
+    <section class="powerby">
+        
+            用 ❤️ 分享，保持热爱 <br/>
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.7e2613cf955853caa8fc0a42b25b0a61363234c79309c5d2729f0ecf2f89b078.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

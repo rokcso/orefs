@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>O Refs</title>
+        <link>http://localhost:1313/</link>
+        <description>Recent content on O Refs</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-CN</language>
+        <lastBuildDate>Mon, 29 Jul 2024 18:43:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Snipaste | 一款实用的截图工具帮你提高工作效率</title>
+        <link>http://localhost:1313/p/snipaste/</link>
+        <pubDate>Mon, 29 Jul 2024 18:43:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/p/snipaste/</guid>
+        <description>&lt;img src="http://localhost:1313/p/snipaste/image-1.png" alt="Featured image of post Snipaste | 一款实用的截图工具帮你提高工作效率" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://zh.snipaste.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Snipaste&lt;/a&gt; 这款工具是我不管在 Windows 还是 Mac 上都一直在使用的截图工具，可见其真的很好用。&lt;/p&gt;
+&lt;p&gt;Snipaste 支持精确到像素级别的截图，并且提供来一系列标注功能，比如：矩形、折线、画笔、记号笔、马赛克、文本等等。&lt;/p&gt;
+&lt;p&gt;Snipaste 截图可以自动检测识别界面元素区域，让截图更快，并且还有截图历史记录回放。&lt;/p&gt;
+&lt;p&gt;除了基础的截图功能以外，你甚至还可以将 Snipaste 作为取色工具、屏幕尺寸计算工具。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/snipaste/image.png&#34;
+	width=&#34;1080&#34;
+	height=&#34;675&#34;
+	srcset=&#34;http://localhost:1313/p/snipaste/image_hue97f2a300c74c93ff6bf3d801d6b1fed_120407_480x0_resize_box_3.png 480w, http://localhost:1313/p/snipaste/image_hue97f2a300c74c93ff6bf3d801d6b1fed_120407_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Snipaste 截图工具&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;160&#34;
+		data-flex-basis=&#34;384px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;如上图所示是使用 Snipaste 截图时的工作页面，鼠标定位到的区域将会被放大，并且可以一键取色。&lt;/p&gt;
+&lt;p&gt;对于一般的截图工具来说，只管截图就完事了，但 Snipaste 独特的贴图功能才是其真正深得用户之心的原因。&lt;/p&gt;
+&lt;p&gt;使用 Snipaste 完成截图（快捷键：&lt;code&gt;F1&lt;/code&gt;）之后，再按快捷键 &lt;code&gt;F3&lt;/code&gt; 即可将刚刚的截图置顶贴在屏幕上。&lt;/p&gt;
+&lt;p&gt;Snipaste 的个人版本完全免费，安全且没有任何广告，使用起来也相当简单，但其实 Snipaste 也可以完成一些高级操作，官方为我们准备了详尽的 &lt;a class=&#34;link&#34; href=&#34;https://docs.snipaste.com/zh-cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;用户手册&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;总结：Snipaste 很简单也很强大，如果你之前没在用过一定要试试。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>关于</title>
+        <link>http://localhost:1313/about/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/about/</guid>
+        <description>&lt;p&gt;🚧 施工中……&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
