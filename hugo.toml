@@ -31,7 +31,7 @@ subtitle = "分享一切好东西 🎁"
 # 是否显示头像
 avatar.enabled = true
 # 头像文件路径，在站点 /assets 下
-avatar.src = "/img/avatar.png"
+avatar.src = "/img/orefs.svg"
 
 [Params.Footer]
 since = 2024

@@ -16,9 +16,11 @@
                     {{ $avatar := resources.Get (.src) }}
                     
                     {{ if $avatar }}
-                        {{ $avatarResized := $avatar.Resize "300x" }}
-                        <img src="{{ $avatarResized.RelPermalink }}" width="{{ $avatarResized.Width }}"
-                            height="{{ $avatarResized.Height }}" class="site-logo" loading="lazy" alt="Avatar">
+                    <img src="{{ $avatar.RelPermalink }}" class="site-logo" loading="lazy" alt="Avatar">
+                    <!-- rokcso: svg 不能使用 Resize，所以取消 Resize，所有 {} 都应该是双 {}  -->
+                    <!-- { $avatarResized := $avatar.Resize "300x" } -->
+                     <!-- <img src="{ $avatarResized.RelPermalink }" width="{ $avatarResized.Width }"
+                        height="{ $avatarResized.Height }" class="site-logo" loading="lazy" alt="Avatar"> -->
                     {{ else }}
                         {{ errorf "Failed loading avatar from %q" . }}
                     {{ end }}
